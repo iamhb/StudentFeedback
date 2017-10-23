@@ -1,0 +1,317 @@
+Private Sub Command1_Click()
+If Form1.Combo3.Text = "4" Then
+If (Combo10.Text = "" Or Combo11.Text = "" Or Combo12.Text = "" Or Combo13.Text = "" Or Combo14.Text = "" Or Combo16.Text = "" Or Combo17.Text = "" Or Combo18.Text = "" Or Combo9.Text = "" Or Combo8.Text = "" Or Combo7.Text = "" Or Combo6.Text = "" Or Combo5.Text = "" Or Combo3.Text = "" Or Combo2.Text = "" Or Combo1.Text = "" Or Combo27.Text = "" Or Combo26.Text = "" Or Combo25.Text = "" Or Combo24.Text = "" Or Combo23.Text = "" Or Combo21.Text = "" Or Combo20.Text = "" Or Combo19.Text = "" Or Combo36.Text = "" Or Combo35.Text = "" Or Combo34.Text = "" Or Combo33.Text = "" Or Combo32.Text = "" Or Combo30.Text = "" Or Combo29.Text = "" Or Combo28.Text = "" Or Combo45.Text = "" Or Combo44.Text = "" Or Combo43.Text = "" Or Combo42.Text = "" Or Combo41.Text = "" Or Combo39.Text = "" Or Combo38.Text = "" Or Combo37.Text = "") Then
+If (Combo54.Text = "" Or Combo53.Text = "" Or Combo52.Text = "" Or Combo51.Text = "" Or Combo5.Text = "" Or Combo48.Text = "" Or Combo47.Text = "" Or Combo46.Text = "") Then
+If (Combo63.Text = "" Or Combo62.Text = "" Or Combo61.Text = "" Or Combo60.Text = "" Or Combo59.Text = "" Or Combo57.Text = "" Or Combo56.Text = "" Or Combo55.Text = "") Then
+yourmsg = MsgBox("Select all options..!!", 0, "Can't Proceed")
+Else
+Form3.Show
+End If
+ElseIf (Combo63.Text = "" Or Combo62.Text = "" Or Combo61.Text = "" Or Combo60.Text = "" Or Combo59.Text = "" Or Combo57.Text = "" Or Combo56.Text = "" Or Combo55.Text = "") Then
+yourmsg = MsgBox("Select all options..!!", 0, "Can't Proceed")
+Else
+Form3.Show
+End If
+ElseIf (Combo54.Text = "" Or Combo53.Text = "" Or Combo52.Text = "" Or Combo51.Text = "" Or Combo5.Text = "" Or Combo48.Text = "" Or Combo47.Text = "" Or Combo46.Text = "") Then
+yourmsg = MsgBox("Select all options..!!", 0, "Can't Proceed")
+ElseIf (Combo63.Text = "" Or Combo62.Text = "" Or Combo61.Text = "" Or Combo60.Text = "" Or Combo59.Text = "" Or Combo57.Text = "" Or Combo56.Text = "" Or Combo55.Text = "") Then
+yourmsg = MsgBox("Select all options..!!", 0, "Can't Proceed")
+Else
+Form3.Show
+End If
+
+Else
+If (Combo10.Text = "" Or Combo11.Text = "" Or Combo12.Text = "" Or Combo13.Text = "" Or Combo14.Text = "" Or Combo15.Text = "" Or Combo16.Text = "" Or Combo17.Text = "" Or Combo18.Text = "" Or Combo9.Text = "" Or Combo8.Text = "" Or Combo7.Text = "" Or Combo6.Text = "" Or Combo5.Text = "" Or Combo4.Text = "" Or Combo3.Text = "" Or Combo2.Text = "" Or Combo1.Text = "" Or Combo27.Text = "" Or Combo26.Text = "" Or Combo25.Text = "" Or Combo24.Text = "" Or Combo23.Text = "" Or Combo22.Text = "" Or Combo21.Text = "" Or Combo20.Text = "" Or Combo19.Text = "" Or Combo36.Text = "" Or Combo35.Text = "" Or Combo34.Text = "" Or Combo33.Text = "" Or Combo32.Text = "" Or Combo31.Text = "" Or Combo30.Text = "" Or Combo29.Text = "" Or Combo28.Text = "" Or Combo45.Text = "" Or Combo44.Text = "" Or Combo43.Text = "" Or Combo42.Text = "" Or Combo41.Text = "" Or Combo40.Text = "" Or Combo39.Text = "" Or Combo38.Text = "" Or Combo37.Text = "") Then
+If (Combo54.Text = "" Or Combo53.Text = "" Or Combo52.Text = "" Or Combo51.Text = "" Or Combo5.Text = "" Or Combo49.Text = "" Or Combo48.Text = "" Or Combo47.Text = "" Or Combo46.Text = "") Then
+If (Combo63.Text = "" Or Combo62.Text = "" Or Combo61.Text = "" Or Combo60.Text = "" Or Combo59.Text = "" Or Combo58.Text = "" Or Combo57.Text = "" Or Combo56.Text = "" Or Combo55.Text = "") Then
+yourmsg = MsgBox("Select all options..!!", 0, "Can't Proceed")
+Else
+Form3.Show
+End If
+ElseIf (Combo63.Text = "" Or Combo62.Text = "" Or Combo61.Text = "" Or Combo60.Text = "" Or Combo59.Text = "" Or Combo58.Text = "" Or Combo57.Text = "" Or Combo56.Text = "" Or Combo55.Text = "") Then
+yourmsg = MsgBox("Select all options..!!", 0, "Can't Proceed")
+Else
+Form3.Show
+End If
+ElseIf (Combo54.Text = "" Or Combo53.Text = "" Or Combo52.Text = "" Or Combo51.Text = "" Or Combo5.Text = "" Or Combo49.Text = "" Or Combo48.Text = "" Or Combo47.Text = "" Or Combo46.Text = "") Then
+yourmsg = MsgBox("Select all options..!!", 0, "Can't Proceed")
+ElseIf (Combo63.Text = "" Or Combo62.Text = "" Or Combo61.Text = "" Or Combo60.Text = "" Or Combo59.Text = "" Or Combo58.Text = "" Or Combo57.Text = "" Or Combo56.Text = "" Or Combo55.Text = "") Then
+yourmsg = MsgBox("Select all options..!!", 0, "Can't Proceed")
+Else
+Form3.Show
+End If
+End If
+
+End Sub
+
+Private Sub Command2_Click()
+Form4.Show
+
+End Sub
+
+Private Sub Command3_Click()
+Form5.Show
+End Sub
+
+Private Sub Form_Resize()
+With Me
+.Width = Screen.Width
+.Height = Screen.Height
+.Top = 0
+.Left = 0
+End With
+End Sub
+Private Sub Form_Load()
+Adodc1.Refresh
+With Adodc1.Recordset
+Do Until .EOF
+
+Combo10.AddItem ![mark]
+Combo11.AddItem ![mark]
+Combo12.AddItem ![mark]
+Combo13.AddItem ![mark]
+Combo14.AddItem ![mark]
+Combo15.AddItem ![mark]
+Combo16.AddItem ![mark]
+Combo17.AddItem ![mark]
+Combo18.AddItem ![mark]
+
+Combo1.AddItem ![mark]
+Combo2.AddItem ![mark]
+Combo3.AddItem ![mark]
+Combo4.AddItem ![mark]
+Combo5.AddItem ![mark]
+Combo6.AddItem ![mark]
+Combo7.AddItem ![mark]
+Combo8.AddItem ![mark]
+Combo9.AddItem ![mark]
+
+Combo19.AddItem ![mark]
+Combo20.AddItem ![mark]
+Combo21.AddItem ![mark]
+Combo22.AddItem ![mark]
+Combo23.AddItem ![mark]
+Combo24.AddItem ![mark]
+Combo25.AddItem ![mark]
+Combo26.AddItem ![mark]
+Combo27.AddItem ![mark]
+
+Combo28.AddItem ![mark]
+Combo29.AddItem ![mark]
+Combo30.AddItem ![mark]
+Combo31.AddItem ![mark]
+Combo32.AddItem ![mark]
+Combo33.AddItem ![mark]
+Combo34.AddItem ![mark]
+Combo35.AddItem ![mark]
+Combo36.AddItem ![mark]
+
+Combo37.AddItem ![mark]
+Combo38.AddItem ![mark]
+Combo39.AddItem ![mark]
+Combo40.AddItem ![mark]
+Combo41.AddItem ![mark]
+Combo42.AddItem ![mark]
+Combo43.AddItem ![mark]
+Combo44.AddItem ![mark]
+Combo45.AddItem ![mark]
+
+Combo46.AddItem ![mark]
+Combo47.AddItem ![mark]
+Combo48.AddItem ![mark]
+Combo49.AddItem ![mark]
+Combo50.AddItem ![mark]
+Combo51.AddItem ![mark]
+Combo52.AddItem ![mark]
+Combo53.AddItem ![mark]
+Combo54.AddItem ![mark]
+
+Combo55.AddItem ![mark]
+Combo56.AddItem ![mark]
+Combo57.AddItem ![mark]
+Combo58.AddItem ![mark]
+Combo59.AddItem ![mark]
+Combo60.AddItem ![mark]
+Combo61.AddItem ![mark]
+Combo62.AddItem ![mark]
+Combo63.AddItem ![mark]
+
+.MoveNext
+Loop
+End With
+End Sub
+Private Sub Combo10_Click()
+If Combo10.Text <> "" Then
+Adodc1.RecordSource = "select * from options where mark='" & Combo10 & "'"
+Adodc1.Refresh
+End If
+End Sub
+
+Raw
+ Form3.frm
+//Question form 2
+
+Private Sub Command1_Click()
+If Form1.Combo3.Text = "4" Then
+If (Combo10.Text = "" Or Combo11.Text = "" Or Combo12.Text = "" Or Combo13.Text = "" Or Combo14.Text = "" Or Combo16.Text = "" Or Combo17.Text = "" Or Combo78.Text = "" Or Combo9.Text = "" Or Combo8.Text = "" Or Combo7.Text = "" Or Combo6.Text = "" Or Combo5.Text = "" Or Combo3.Text = "" Or Combo2.Text = "" Or Combo79.Text = "" Or Combo27.Text = "" Or Combo26.Text = "" Or Combo25.Text = "" Or Combo24.Text = "" Or Combo23.Text = "" Or Combo21.Text = "" Or Combo20.Text = "" Or Combo80.Text = "" Or Combo36.Text = "" Or Combo35.Text = "" Or Combo34.Text = "" Or Combo33.Text = "" Or Combo32.Text = "" Or Combo30.Text = "" Or Combo29.Text = "" Or Combo81.Text = "" Or Combo45.Text = "" Or Combo44.Text = "" Or Combo43.Text = "" Or Combo42.Text = "" Or Combo41.Text = "" Or Combo39.Text = "" Or Combo38.Text = "" Or Combo82.Text = "") Then
+If (Combo54.Text = "" Or Combo53.Text = "" Or Combo52.Text = "" Or Combo51.Text = "" Or Combo5.Text = "" Or Combo48.Text = "" Or Combo47.Text = "" Or Combo83.Text = "") Then
+If (Combo63.Text = "" Or Combo62.Text = "" Or Combo61.Text = "" Or Combo60.Text = "" Or Combo59.Text = "" Or Combo57.Text = "" Or Combo56.Text = "" Or Combo84.Text = "") Then
+yourmsg = MsgBox("Select all options..!!", 0, "Can't Proceed")
+Else
+Form4.Show
+End If
+ElseIf (Combo63.Text = "" Or Combo62.Text = "" Or Combo61.Text = "" Or Combo60.Text = "" Or Combo59.Text = "" Or Combo57.Text = "" Or Combo56.Text = "" Or Combo84.Text = "") Then
+yourmsg = MsgBox("Select all options..!!", 0, "Can't Proceed")
+Else
+Form4.Show
+End If
+ElseIf (Combo54.Text = "" Or Combo53.Text = "" Or Combo52.Text = "" Or Combo51.Text = "" Or Combo5.Text = "" Or Combo48.Text = "" Or Combo47.Text = "" Or Combo83.Text = "") Then
+yourmsg = MsgBox("Select all options..!!", 0, "Can't Proceed")
+ElseIf (Combo63.Text = "" Or Combo62.Text = "" Or Combo61.Text = "" Or Combo60.Text = "" Or Combo59.Text = "" Or Combo57.Text = "" Or Combo56.Text = "" Or Combo84.Text = "") Then
+yourmsg = MsgBox("Select all options..!!", 0, "Can't Proceed")
+Else
+Form4.Show
+End If
+
+Else
+If (Combo10.Text = "" Or Combo11.Text = "" Or Combo12.Text = "" Or Combo13.Text = "" Or Combo14.Text = "" Or Combo15.Text = "" Or Combo16.Text = "" Or Combo17.Text = "" Or Combo78.Text = "" Or Combo9.Text = "" Or Combo8.Text = "" Or Combo7.Text = "" Or Combo6.Text = "" Or Combo5.Text = "" Or Combo4.Text = "" Or Combo3.Text = "" Or Combo2.Text = "" Or Combo79.Text = "" Or Combo27.Text = "" Or Combo26.Text = "" Or Combo25.Text = "" Or Combo24.Text = "" Or Combo23.Text = "" Or Combo22.Text = "" Or Combo21.Text = "" Or Combo20.Text = "" Or Combo80.Text = "" Or Combo36.Text = "" Or Combo35.Text = "" Or Combo34.Text = "" Or Combo33.Text = "" Or Combo32.Text = "" Or Combo31.Text = "" Or Combo30.Text = "" Or Combo29.Text = "" Or Combo81.Text = "" Or Combo45.Text = "" Or Combo44.Text = "" Or Combo43.Text = "" Or Combo42.Text = "" Or Combo41.Text = "" Or Combo40.Text = "" Or Combo39.Text = "" Or Combo38.Text = "" Or Combo82.Text = "") Then
+If (Combo54.Text = "" Or Combo53.Text = "" Or Combo52.Text = "" Or Combo51.Text = "" Or Combo5.Text = "" Or Combo49.Text = "" Or Combo48.Text = "" Or Combo47.Text = "" Or Combo83.Text = "") Then
+If (Combo63.Text = "" Or Combo62.Text = "" Or Combo61.Text = "" Or Combo60.Text = "" Or Combo59.Text = "" Or Combo58.Text = "" Or Combo57.Text = "" Or Combo56.Text = "" Or Combo84.Text = "") Then
+yourmsg = MsgBox("Select all options..!!", 0, "Can't Proceed")
+Else
+Form4.Show
+End If
+ElseIf (Combo63.Text = "" Or Combo62.Text = "" Or Combo61.Text = "" Or Combo60.Text = "" Or Combo59.Text = "" Or Combo58.Text = "" Or Combo57.Text = "" Or Combo56.Text = "" Or Combo84.Text = "") Then
+yourmsg = MsgBox("Select all options..!!", 0, "Can't Proceed")
+Else
+Form4.Show
+End If
+ElseIf (Combo54.Text = "" Or Combo53.Text = "" Or Combo52.Text = "" Or Combo51.Text = "" Or Combo5.Text = "" Or Combo49.Text = "" Or Combo48.Text = "" Or Combo47.Text = "" Or Combo83.Text = "") Then
+yourmsg = MsgBox("Select all options..!!", 0, "Can't Proceed")
+ElseIf (Combo63.Text = "" Or Combo62.Text = "" Or Combo61.Text = "" Or Combo60.Text = "" Or Combo59.Text = "" Or Combo58.Text = "" Or Combo57.Text = "" Or Combo56.Text = "" Or Combo84.Text = "") Then
+yourmsg = MsgBox("Select all options..!!", 0, "Can't Proceed")
+Else
+Form4.Show
+End If
+End If
+
+
+End Sub
+
+Private Sub Command2_Click()
+Form2.Show
+End Sub
+
+Private Sub Form_Resize()
+With Me
+.Width = Screen.Width
+.Height = Screen.Height
+.Top = 0
+.Left = 0
+End With
+End Sub
+
+Private Sub Form_Load()
+Adodc1.Refresh
+With Adodc1.Recordset
+Do Until .EOF
+
+Combo10.AddItem ![mark]
+Combo11.AddItem ![mark]
+Combo12.AddItem ![mark]
+Combo13.AddItem ![mark]
+Combo14.AddItem ![mark]
+Combo15.AddItem ![mark]
+Combo16.AddItem ![mark]
+Combo17.AddItem ![mark]
+Combo78.AddItem ![mark]
+
+Combo1.AddItem ![mark]
+Combo2.AddItem ![mark]
+Combo3.AddItem ![mark]
+Combo4.AddItem ![mark]
+Combo5.AddItem ![mark]
+Combo6.AddItem ![mark]
+Combo7.AddItem ![mark]
+Combo8.AddItem ![mark]
+Combo9.AddItem ![mark]
+Combo79.AddItem ![mark]
+
+Combo20.AddItem ![mark]
+Combo21.AddItem ![mark]
+Combo22.AddItem ![mark]
+Combo23.AddItem ![mark]
+Combo24.AddItem ![mark]
+Combo25.AddItem ![mark]
+Combo26.AddItem ![mark]
+Combo27.AddItem ![mark]
+Combo80.AddItem ![mark]
+
+Combo28.AddItem ![mark]
+Combo29.AddItem ![mark]
+Combo30.AddItem ![mark]
+Combo31.AddItem ![mark]
+Combo32.AddItem ![mark]
+Combo33.AddItem ![mark]
+Combo34.AddItem ![mark]
+Combo35.AddItem ![mark]
+Combo36.AddItem ![mark]
+Combo81.AddItem ![mark]
+
+Combo37.AddItem ![mark]
+Combo38.AddItem ![mark]
+Combo39.AddItem ![mark]
+Combo40.AddItem ![mark]
+Combo41.AddItem ![mark]
+Combo42.AddItem ![mark]
+Combo43.AddItem ![mark]
+Combo44.AddItem ![mark]
+Combo45.AddItem ![mark]
+Combo82.AddItem ![mark]
+
+Combo46.AddItem ![mark]
+Combo47.AddItem ![mark]
+Combo48.AddItem ![mark]
+Combo49.AddItem ![mark]
+Combo50.AddItem ![mark]
+Combo51.AddItem ![mark]
+Combo52.AddItem ![mark]
+Combo53.AddItem ![mark]
+Combo54.AddItem ![mark]
+Combo83.AddItem ![mark]
+
+Combo55.AddItem ![mark]
+Combo56.AddItem ![mark]
+Combo57.AddItem ![mark]
+Combo58.AddItem ![mark]
+Combo59.AddItem ![mark]
+Combo60.AddItem ![mark]
+Combo61.AddItem ![mark]
+Combo62.AddItem ![mark]
+Combo63.AddItem ![mark]
+Combo84.AddItem ![mark]
+
+Combo64.AddItem ![mark]
+Combo65.AddItem ![mark]
+Combo66.AddItem ![mark]
+Combo67.AddItem ![mark]
+Combo68.AddItem ![mark]
+Combo69.AddItem ![mark]
+Combo70.AddItem ![mark]
+Combo71.AddItem ![mark]
+Combo72.AddItem ![mark]
+
+.MoveNext
+Loop
+End With
+End Sub
+Private Sub Combo10_Click()
+If Combo10.Text <> "" Then
+Adodc1.RecordSource = "select * from options where mark='" & Combo10 & "'"
+Adodc1.Refresh
+End If
+End Sub
+
+Private Sub Label24_Click()
+
+End Sub
