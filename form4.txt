@@ -1,0 +1,1063 @@
+//Question form 3
+Dim a(9) As Integer, b(9) As Integer, c(9) As Integer, d(9) As Integer
+Private Sub Command1_Click()
+Dim n As Boolean
+If Form1.Combo3.Text = "4" Then
+If (Combo10.Text = "" Or Combo1.Text = "" Or Combo8.Text = "" Or Combo17.Text = "" Or Combo24.Text = "" Or Combo40.Text = "" Or Combo48.Text = "" Or Combo56.Text = "" Or Combo9.Text = "" Or Combo2.Text = "" Or Combo11.Text = "" Or Combo18.Text = "" Or Combo25.Text = "" Or Combo41.Text = "" Or Combo49.Text = "" Or Combo57.Text = "" Or Combo27.Text = "" Or Combo3.Text = "" Or Combo12.Text = "" Or Combo19.Text = "" Or Combo26.Text = "" Or Combo42.Text = "" Or Combo50.Text = "" Or Combo58.Text = "" Or Combo36.Text = "" Or Combo4.Text = "" Or Combo13.Text = "" Or Combo20.Text = "" Or Combo28.Text = "" Or Combo43.Text = "" Or Combo57.Text = "" Or Combo59.Text = "" Or Combo45.Text = "" Or Combo5.Text = "" Or Combo14.Text = "" Or Combo21.Text = "" Or Combo29.Text = "" Or Combo44.Text = "" Or Combo52.Text = "" Or Combo60.Text = "") Then
+yourmsg = MsgBox("Select all options..!!", 0, "Can't Proceed")
+ElseIf (Combo54.Text = "" Or Combo6.Text = "" Or Combo15.Text = "" Or Combo22.Text = "" Or Combo30.Text = "" Or Combo46.Text = "" Or Combo53.Text = "" Or Combo61.Text = "") Then
+yourmsg = MsgBox("Select all options..!!", 0, "Can't Proceed")
+Else
+n = True
+End If
+
+Else
+If (Combo10.Text = "" Or Combo1.Text = "" Or Combo8.Text = "" Or Combo17.Text = "" Or Combo24.Text = "" Or Combo32.Text = "" Or Combo40.Text = "" Or Combo48.Text = "" Or Combo56.Text = "" Or Combo9.Text = "" Or Combo2.Text = "" Or Combo11.Text = "" Or Combo18.Text = "" Or Combo25.Text = "" Or Combo33.Text = "" Or Combo41.Text = "" Or Combo49.Text = "" Or Combo57.Text = "" Or Combo27.Text = "" Or Combo3.Text = "" Or Combo12.Text = "" Or Combo19.Text = "" Or Combo26.Text = "" Or Combo34.Text = "" Or Combo42.Text = "" Or Combo50.Text = "" Or Combo58.Text = "" Or Combo36.Text = "" Or Combo4.Text = "" Or Combo13.Text = "" Or Combo20.Text = "" Or Combo28.Text = "" Or Combo35.Text = "" Or Combo43.Text = "" Or Combo57.Text = "" Or Combo59.Text = "" Or Combo45.Text = "" Or Combo5.Text = "" Or Combo14.Text = "" Or Combo21.Text = "" Or Combo29.Text = "" Or Combo37.Text = "" Or Combo44.Text = "" Or Combo52.Text = "" Or Combo60.Text = "") Then
+yourmsg = MsgBox("Select all options..!!", 0, "Can't Proceed")
+ElseIf (Combo54.Text = "" Or Combo6.Text = "" Or Combo15.Text = "" Or Combo22.Text = "" Or Combo30.Text = "" Or Combo38.Text = "" Or Combo46.Text = "" Or Combo53.Text = "" Or Combo61.Text = "") Then
+yourmsg = MsgBox("Select all options..!!", 0, "Can't Proceed")
+Else
+n = True
+End If
+End If
+
+If (n) Then
+Dim i As Integer
+For i = 1 To 9
+a(i) = 0
+b(i) = 0
+c(i) = 0
+d(i) = 0
+Next
+
+If Form2.Combo10.Text = "a" Then
+a(1) = a(1) + 1
+ElseIf Form2.Combo10.Text = "b" Then
+b(1) = b(1) + 1
+ElseIf Form2.Combo10.Text = "c" Then
+c(1) = c(1) + 1
+ElseIf Form2.Combo10.Text = "d" Then
+d(1) = d(1) + 1
+End If
+
+If Form2.Combo9.Text = "a" Then
+a(1) = a(1) + 1
+ElseIf Form2.Combo9.Text = "b" Then
+b(1) = b(1) + 1
+ElseIf Form2.Combo9.Text = "c" Then
+c(1) = c(1) + 1
+ElseIf Form2.Combo9.Text = "d" Then
+d(1) = d(1) + 1
+End If
+
+If Form2.Combo27.Text = "a" Then
+a(1) = a(1) + 1
+ElseIf Form2.Combo27.Text = "b" Then
+b(1) = b(1) + 1
+ElseIf Form2.Combo27.Text = "c" Then
+c(1) = c(1) + 1
+ElseIf Form2.Combo27.Text = "d" Then
+d(1) = d(1) + 1
+End If
+
+If Form2.Combo36.Text = "a" Then
+a(1) = a(1) + 1
+ElseIf Form2.Combo36.Text = "b" Then
+b(1) = b(1) + 1
+ElseIf Form2.Combo36.Text = "c" Then
+c(1) = c(1) + 1
+ElseIf Form2.Combo36.Text = "d" Then
+d(1) = d(1) + 1
+End If
+
+If Form2.Combo45.Text = "a" Then
+a(1) = a(1) + 1
+ElseIf Form2.Combo45.Text = "b" Then
+b(1) = b(1) + 1
+ElseIf Form2.Combo45.Text = "c" Then
+c(1) = c(1) + 1
+ElseIf Form2.Combo45.Text = "d" Then
+d(1) = d(1) + 1
+End If
+
+If Form2.Combo54.Text = "a" Then
+a(1) = a(1) + 1
+ElseIf Form2.Combo54.Text = "b" Then
+b(1) = b(1) + 1
+ElseIf Form2.Combo54.Text = "c" Then
+c(1) = c(1) + 1
+ElseIf Form2.Combo54.Text = "d" Then
+d(1) = d(1) + 1
+End If
+
+If Form2.Combo63.Text = "a" Then
+a(1) = a(1) + 1
+ElseIf Form2.Combo63.Text = "b" Then
+b(1) = b(1) + 1
+ElseIf Form2.Combo63.Text = "c" Then
+c(1) = c(1) + 1
+ElseIf Form2.Combo63.Text = "d" Then
+d(1) = d(1) + 1
+End If
+
+If Form3.Combo10.Text = "a" Then
+a(1) = a(1) + 1
+ElseIf Form3.Combo10.Text = "b" Then
+b(1) = b(1) + 1
+ElseIf Form3.Combo10.Text = "c" Then
+c(1) = c(1) + 1
+ElseIf Form3.Combo10.Text = "d" Then
+d(1) = d(1) + 1
+End If
+
+If Form3.Combo9.Text = "a" Then
+a(1) = a(1) + 1
+ElseIf Form3.Combo9.Text = "b" Then
+b(1) = b(1) + 1
+ElseIf Form3.Combo9.Text = "c" Then
+c(1) = c(1) + 1
+ElseIf Form3.Combo9.Text = "d" Then
+d(1) = d(1) + 1
+End If
+
+If Form3.Combo27.Text = "a" Then
+a(1) = a(1) + 1
+ElseIf Form3.Combo27.Text = "b" Then
+b(1) = b(1) + 1
+ElseIf Form3.Combo27.Text = "c" Then
+c(1) = c(1) + 1
+ElseIf Form3.Combo27.Text = "d" Then
+d(1) = d(1) + 1
+End If
+
+If Form3.Combo36.Text = "a" Then
+a(1) = a(1) + 1
+ElseIf Form3.Combo36.Text = "b" Then
+b(1) = b(1) + 1
+ElseIf Form3.Combo36.Text = "c" Then
+c(1) = c(1) + 1
+ElseIf Form3.Combo36.Text = "d" Then
+d(1) = d(1) + 1
+End If
+
+If Form3.Combo45.Text = "a" Then
+a(1) = a(1) + 1
+ElseIf Form3.Combo45.Text = "b" Then
+b(1) = b(1) + 1
+ElseIf Form3.Combo45.Text = "c" Then
+c(1) = c(1) + 1
+ElseIf Form3.Combo45.Text = "d" Then
+d(1) = d(1) + 1
+End If
+
+If Form3.Combo54.Text = "a" Then
+a(1) = a(1) + 1
+ElseIf Form3.Combo54.Text = "b" Then
+b(1) = b(1) + 1
+ElseIf Form3.Combo54.Text = "c" Then
+c(1) = c(1) + 1
+ElseIf Form3.Combo54.Text = "d" Then
+d(1) = d(1) + 1
+End If
+
+If Form3.Combo63.Text = "a" Then
+a(1) = a(1) + 1
+ElseIf Form3.Combo63.Text = "b" Then
+b(1) = b(1) + 1
+ElseIf Form3.Combo63.Text = "c" Then
+c(1) = c(1) + 1
+ElseIf Form3.Combo63.Text = "d" Then
+d(1) = d(1) + 1
+End If
+
+If Form4.Combo10.Text = "a" Then
+a(1) = a(1) + 1
+ElseIf Form4.Combo10.Text = "b" Then
+b(1) = b(1) + 1
+ElseIf Form4.Combo10.Text = "c" Then
+c(1) = c(1) + 1
+ElseIf Form4.Combo10.Text = "d" Then
+d(1) = d(1) + 1
+End If
+
+If Form4.Combo9.Text = "a" Then
+a(1) = a(1) + 1
+ElseIf Form4.Combo9.Text = "b" Then
+b(1) = b(1) + 1
+ElseIf Form4.Combo9.Text = "c" Then
+c(1) = c(1) + 1
+ElseIf Form4.Combo9.Text = "d" Then
+d(1) = d(1) + 1
+End If
+
+If Form4.Combo27.Text = "a" Then
+a(1) = a(1) + 1
+ElseIf Form4.Combo27.Text = "b" Then
+b(1) = b(1) + 1
+ElseIf Form4.Combo27.Text = "c" Then
+c(1) = c(1) + 1
+ElseIf Form4.Combo27.Text = "d" Then
+d(1) = d(1) + 1
+End If
+
+If Form4.Combo36.Text = "a" Then
+a(1) = a(1) + 1
+ElseIf Form4.Combo36.Text = "b" Then
+b(1) = b(1) + 1
+ElseIf Form4.Combo36.Text = "c" Then
+c(1) = c(1) + 1
+ElseIf Form4.Combo36.Text = "d" Then
+d(1) = d(1) + 1
+End If
+
+If Form4.Combo45.Text = "a" Then
+a(1) = a(1) + 1
+ElseIf Form4.Combo45.Text = "b" Then
+b(1) = b(1) + 1
+ElseIf Form4.Combo45.Text = "c" Then
+c(1) = c(1) + 1
+ElseIf Form4.Combo45.Text = "d" Then
+d(1) = d(1) + 1
+End If
+
+If Form4.Combo54.Text = "a" Then
+a(1) = a(1) + 1
+ElseIf Form3.Combo54.Text = "b" Then
+b(1) = b(1) + 1
+ElseIf Form4.Combo54.Text = "c" Then
+c(1) = c(1) + 1
+ElseIf Form4.Combo54.Text = "d" Then
+d(1) = d(1) + 1
+End If
+Label49.Caption = Val(a(1))
+Label53.Caption = Val(b(1))
+Label68.Caption = Val(c(1))
+Label69.Caption = Val(d(1))
+
+
+If Form2.Combo11.Text = "a" Then
+a(2) = a(2) + 1
+ElseIf Form2.Combo11.Text = "b" Then
+b(2) = b(2) + 1
+ElseIf Form2.Combo11.Text = "c" Then
+c(2) = c(2) + 1
+ElseIf Form2.Combo11.Text = "d" Then
+d(2) = d(2) + 1
+End If
+If Form2.Combo8.Text = "a" Then
+a(2) = a(2) + 1
+ElseIf Form2.Combo8.Text = "b" Then
+b(2) = b(2) + 1
+ElseIf Form2.Combo8.Text = "c" Then
+c(2) = c(2) + 1
+ElseIf Form2.Combo8.Text = "d" Then
+d(2) = d(2) + 1
+End If
+If Form2.Combo26.Text = "a" Then
+a(2) = a(2) + 1
+ElseIf Form2.Combo26.Text = "b" Then
+b(2) = b(2) + 1
+ElseIf Form2.Combo26.Text = "c" Then
+c(2) = c(2) + 1
+ElseIf Form2.Combo26.Text = "d" Then
+d(2) = d(2) + 1
+End If
+If Form2.Combo35.Text = "a" Then
+a(2) = a(2) + 1
+ElseIf Form2.Combo35.Text = "b" Then
+b(2) = b(2) + 1
+ElseIf Form2.Combo35.Text = "c" Then
+c(2) = c(2) + 1
+ElseIf Form2.Combo35.Text = "d" Then
+d(2) = d(2) + 1
+End If
+If Form2.Combo44.Text = "a" Then
+a(2) = a(2) + 1
+ElseIf Form2.Combo44.Text = "b" Then
+b(2) = b(2) + 1
+ElseIf Form2.Combo44.Text = "c" Then
+c(2) = c(2) + 1
+ElseIf Form2.Combo44.Text = "d" Then
+d(2) = d(2) + 1
+End If
+If Form2.Combo53.Text = "a" Then
+a(2) = a(2) + 1
+ElseIf Form2.Combo53.Text = "b" Then
+b(2) = b(2) + 1
+ElseIf Form2.Combo53.Text = "c" Then
+c(2) = c(2) + 1
+ElseIf Form2.Combo53.Text = "d" Then
+d(2) = d(2) + 1
+End If
+If Form2.Combo62.Text = "a" Then
+a(2) = a(2) + 1
+ElseIf Form2.Combo62.Text = "b" Then
+b(2) = b(2) + 1
+ElseIf Form2.Combo62.Text = "c" Then
+c(2) = c(2) + 1
+ElseIf Form2.Combo62.Text = "d" Then
+d(2) = d(2) + 1
+End If
+
+If Form3.Combo11.Text = "a" Then
+a(2) = a(2) + 1
+ElseIf Form3.Combo11.Text = "b" Then
+b(2) = b(2) + 1
+ElseIf Form3.Combo11.Text = "c" Then
+c(2) = c(2) + 1
+ElseIf Form3.Combo11.Text = "d" Then
+d(2) = d(2) + 1
+End If
+If Form3.Combo8.Text = "a" Then
+a(2) = a(2) + 1
+ElseIf Form3.Combo8.Text = "b" Then
+b(2) = b(2) + 1
+ElseIf Form3.Combo8.Text = "c" Then
+c(2) = c(2) + 1
+ElseIf Form3.Combo8.Text = "d" Then
+d(2) = d(2) + 1
+End If
+If Form3.Combo26.Text = "a" Then
+a(2) = a(2) + 1
+ElseIf Form3.Combo26.Text = "b" Then
+b(2) = b(2) + 1
+ElseIf Form3.Combo26.Text = "c" Then
+c(2) = c(2) + 1
+ElseIf Form3.Combo26.Text = "d" Then
+d(2) = d(2) + 1
+End If
+If Form3.Combo35.Text = "a" Then
+a(2) = a(2) + 1
+ElseIf Form3.Combo35.Text = "b" Then
+b(2) = b(2) + 1
+ElseIf Form3.Combo35.Text = "c" Then
+c(2) = c(2) + 1
+ElseIf Form3.Combo35.Text = "d" Then
+d(2) = d(2) + 1
+End If
+If Form3.Combo44.Text = "a" Then
+a(2) = a(2) + 1
+ElseIf Form3.Combo44.Text = "b" Then
+b(2) = b(2) + 1
+ElseIf Form3.Combo44.Text = "c" Then
+c(2) = c(2) + 1
+ElseIf Form3.Combo44.Text = "d" Then
+d(2) = d(2) + 1
+End If
+If Form3.Combo53.Text = "a" Then
+a(2) = a(2) + 1
+ElseIf Form3.Combo53.Text = "b" Then
+b(2) = b(2) + 1
+ElseIf Form3.Combo53.Text = "c" Then
+c(2) = c(2) + 1
+ElseIf Form3.Combo53.Text = "d" Then
+d(2) = d(2) + 1
+End If
+If Form3.Combo62.Text = "a" Then
+a(2) = a(2) + 1
+ElseIf Form3.Combo62.Text = "b" Then
+b(2) = b(2) + 1
+ElseIf Form3.Combo62.Text = "c" Then
+c(2) = c(2) + 1
+ElseIf Form3.Combo62.Text = "d" Then
+d(2) = d(2) + 1
+End If
+If Form4.Combo1.Text = "a" Then
+a(2) = a(2) + 1
+ElseIf Form4.Combo1.Text = "b" Then
+b(2) = b(2) + 1
+ElseIf Form4.Combo1.Text = "c" Then
+c(2) = c(2) + 1
+ElseIf Form4.Combo1.Text = "d" Then
+d(2) = d(2) + 1
+End If
+If Form4.Combo2.Text = "a" Then
+a(2) = a(2) + 1
+ElseIf Form4.Combo2.Text = "b" Then
+b(2) = b(2) + 1
+ElseIf Form4.Combo2.Text = "c" Then
+c(2) = c(2) + 1
+ElseIf Form4.Combo2.Text = "d" Then
+d(2) = d(2) + 1
+End If
+
+If Form4.Combo3.Text = "a" Then
+a(2) = a(2) + 1
+ElseIf Form4.Combo3.Text = "b" Then
+b(2) = b(2) + 1
+ElseIf Form4.Combo3.Text = "c" Then
+c(2) = c(2) + 1
+ElseIf Form4.Combo3.Text = "d" Then
+d(2) = d(2) + 1
+End If
+
+If Form4.Combo4.Text = "a" Then
+a(2) = a(2) + 1
+ElseIf Form4.Combo4.Text = "b" Then
+b(2) = b(2) + 1
+ElseIf Form4.Combo4.Text = "c" Then
+c(2) = c(2) + 1
+ElseIf Form4.Combo4.Text = "d" Then
+d(2) = d(2) + 1
+End If
+If Form4.Combo5.Text = "a" Then
+a(2) = a(2) + 1
+ElseIf Form4.Combo5.Text = "b" Then
+b(2) = b(2) + 1
+ElseIf Form4.Combo5.Text = "c" Then
+c(2) = c(2) + 1
+ElseIf Form4.Combo5.Text = "d" Then
+d(2) = d(2) + 1
+End If
+
+If Form4.Combo6.Text = "a" Then
+a(2) = a(2) + 1
+ElseIf Form4.Combo6.Text = "b" Then
+b(2) = b(2) + 1
+ElseIf Form4.Combo6.Text = "c" Then
+c(2) = c(2) + 1
+ElseIf Form4.Combo6.Text = "d" Then
+d(2) = d(2) + 1
+End If
+Label72.Caption = Val(a(2))
+Label71.Caption = Val(b(2))
+Label70.Caption = Val(c(2))
+Label77.Caption = Val(d(2))
+
+i = 3
+If Form2.Combo12.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form2.Combo12.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form2.Combo12.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form2.Combo12.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
+If Form2.Combo7.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form2.Combo7.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form2.Combo7.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form2.Combo7.Text = "d" Then
+d(i) = d(i) + 1
+End If
+If Form2.Combo25.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form2.Combo25.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form2.Combo25.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form2.Combo25.Text = "d" Then
+d(i) = d(i) + 1
+End If
+If Form2.Combo34.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form2.Combo34.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form2.Combo34.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form2.Combo34.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
+If Form2.Combo43.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form2.Combo43.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form2.Combo43.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form2.Combo43.Text = "d" Then
+d(i) = d(i) + 1
+End If
+If Form2.Combo52.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form2.Combo52.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form2.Combo52.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form2.Combo52.Text = "d" Then
+d(i) = d(i) + 1
+End If
+If Form2.Combo61.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form2.Combo61.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form2.Combo61.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form2.Combo61.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
+If Form3.Combo12.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form3.Combo12.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form3.Combo12.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form3.Combo12.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
+If Form3.Combo7.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form3.Combo7.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form3.Combo7.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form3.Combo7.Text = "d" Then
+d(i) = d(i) + 1
+End If
+If Form3.Combo25.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form3.Combo25.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form3.Combo25.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form3.Combo25.Text = "d" Then
+d(i) = d(i) + 1
+End If
+If Form3.Combo34.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form3.Combo34.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form3.Combo34.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form3.Combo34.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
+If Form3.Combo43.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form3.Combo43.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form3.Combo43.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form3.Combo43.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
+If Form3.Combo52.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form3.Combo52.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form3.Combo52.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form3.Combo52.Text = "d" Then
+d(i) = d(i) + 1
+End If
+If Form3.Combo61.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form3.Combo61.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form3.Combo61.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form3.Combo61.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
+If Form4.Combo8.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form4.Combo8.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form4.Combo8.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form4.Combo8.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
+If Form4.Combo11.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form4.Combo11.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form4.Combo11.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form4.Combo11.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
+If Form4.Combo12.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form4.Combo12.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form4.Combo12.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form4.Combo12.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
+If Form4.Combo13.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form4.Combo13.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form4.Combo13.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form4.Combo13.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
+If Form4.Combo14.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form4.Combo14.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form4.Combo14.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form4.Combo14.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
+If Form4.Combo15.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form4.Combo15.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form4.Combo15.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form4.Combo15.Text = "d" Then
+d(i) = d(i) + 1
+End If
+Label73.Caption = Val(a(i))
+Label84.Caption = Val(b(i))
+Label82.Caption = Val(c(i))
+Label79.Caption = Val(d(i))
+
+
+i = 4
+If Form2.Combo13.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form2.Combo13.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form2.Combo13.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form2.Combo13.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
+If Form2.Combo6.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form2.Combo6.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form2.Combo6.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form2.Combo6.Text = "d" Then
+d(i) = d(i) + 1
+End If
+If Form2.Combo24.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form2.Combo24.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form2.Combo24.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form2.Combo24.Text = "d" Then
+d(i) = d(i) + 1
+End If
+If Form2.Combo33.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form2.Combo33.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form2.Combo33.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form2.Combo33.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
+If Form2.Combo42.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form2.Combo42.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form2.Combo42.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form2.Combo42.Text = "d" Then
+d(i) = d(i) + 1
+End If
+If Form2.Combo51.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form2.Combo51.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form2.Combo51.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form2.Combo51.Text = "d" Then
+d(i) = d(i) + 1
+End If
+If Form2.Combo60.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form2.Combo60.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form2.Combo60.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form2.Combo60.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
+If Form3.Combo13.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form3.Combo13.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form3.Combo13.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form3.Combo13.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
+If Form3.Combo6.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form3.Combo6.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form3.Combo6.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form3.Combo6.Text = "d" Then
+d(i) = d(i) + 1
+End If
+If Form3.Combo24.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form3.Combo24.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form3.Combo24.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form3.Combo24.Text = "d" Then
+d(i) = d(i) + 1
+End If
+If Form3.Combo33.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form3.Combo33.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form3.Combo33.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form3.Combo33.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
+If Form3.Combo42.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form3.Combo42.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form3.Combo42.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form3.Combo42.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
+If Form3.Combo51.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form3.Combo51.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form3.Combo51.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form3.Combo51.Text = "d" Then
+d(i) = d(i) + 1
+End If
+If Form3.Combo60.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form3.Combo60.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form3.Combo60.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form3.Combo60.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
+If Form4.Combo17.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form4.Combo17.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form4.Combo17.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form4.Combo17.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
+If Form4.Combo18.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form4.Combo18.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form4.Combo18.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form4.Combo18.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
+If Form4.Combo19.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form4.Combo19.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form4.Combo19.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form4.Combo19.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
+If Form4.Combo20.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form4.Combo20.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form4.Combo20.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form4.Combo20.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
+If Form4.Combo21.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form4.Combo21.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form4.Combo21.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form4.Combo21.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
+If Form4.Combo22.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form4.Combo22.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form4.Combo22.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form4.Combo22.Text = "d" Then
+d(i) = d(i) + 1
+End If
+Label78.Caption = Val(a(i))
+Label80.Caption = Val(b(i))
+Label81.Caption = Val(c(i))
+Label83.Caption = Val(d(i))
+
+i = 5
+If Form2.Combo14.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form2.Combo14.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form2.Combo14.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form2.Combo14.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
+If Form2.Combo5.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form2.Combo5.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form2.Combo5.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form2.Combo5.Text = "d" Then
+d(i) = d(i) + 1
+End If
+If Form2.Combo23.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form2.Combo23.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form2.Combo23.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form2.Combo23.Text = "d" Then
+d(i) = d(i) + 1
+End If
+If Form2.Combo32.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form2.Combo32.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form2.Combo32.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form2.Combo32.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
+If Form2.Combo41.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form2.Combo41.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form2.Combo41.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form2.Combo41.Text = "d" Then
+d(i) = d(i) + 1
+End If
+If Form2.Combo50.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form2.Combo50.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form2.Combo50.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form2.Combo50.Text = "d" Then
+d(i) = d(i) + 1
+End If
+If Form2.Combo59.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form2.Combo59.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form2.Combo59.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form2.Combo59.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
+If Form3.Combo14.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form3.Combo14.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form3.Combo14.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form3.Combo14.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
+If Form3.Combo5.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form3.Combo5.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form3.Combo5.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form3.Combo5.Text = "d" Then
+d(i) = d(i) + 1
+End If
+If Form3.Combo23.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form3.Combo23.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form3.Combo23.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form3.Combo23.Text = "d" Then
+d(i) = d(i) + 1
+End If
+If Form3.Combo32.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form3.Combo32.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form3.Combo32.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form3.Combo32.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
+If Form3.Combo41.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form3.Combo41.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form3.Combo41.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form3.Combo41.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
+If Form3.Combo50.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form3.Combo50.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form3.Combo50.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form3.Combo50.Text = "d" Then
+d(i) = d(i) + 1
+End If
+If Form3.Combo59.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form3.Combo59.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form3.Combo59.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form3.Combo59.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
+If Form4.Combo24.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form4.Combo24.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form4.Combo24.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form4.Combo24.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
+If Form4.Combo25.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form4.Combo25.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form4.Combo25.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form4.Combo25.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
+If Form4.Combo26.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form4.Combo26.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form4.Combo26.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form4.Combo26.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
+If Form4.Combo28.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form4.Combo28.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form4.Combo28.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form4.Combo28.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
+If Form4.Combo29.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form4.Combo29.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form4.Combo29.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form4.Combo29.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
+If Form4.Combo30.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form4.Combo30.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form4.Combo30.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form4.Combo30.Text = "d" Then
+d(i) = d(i) + 1
+End If
+Label85.Caption = Val(a(i))
+Label86.Caption = Val(b(i))
+Label87.Caption = Val(c(i))
+Label91.Caption = Val(d(i))
+
+
+
+i = 6
+
+If Form2.Combo15.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form2.Combo15.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form2.Combo15.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form2.Combo15.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
+If Form2.Combo4.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form2.Combo4.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form2.Combo4.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form2.Combo4.Text = "d" Then
+d(i) = d(i) + 1
+End If
+If Form2.Combo22.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form2.Combo22.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form2.Combo22.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form2.Combo22.Text = "d" Then
+d(i) = d(i) + 1
+End If
+If Form2.Combo31.Text = "a" Then
+a(i) = a(i) + 1
+ElseIf Form2.Combo31.Text = "b" Then
+b(i) = b(i) + 1
+ElseIf Form2.Combo31.Text = "c" Then
+c(i) = c(i) + 1
+ElseIf Form2.Combo31.Text = "d" Then
+d(i) = d(i) + 1
+End If
+
