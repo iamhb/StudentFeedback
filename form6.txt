@@ -1,0 +1,42 @@
+//main login form
+Private Sub Command1_Click()
+    ProgressBar1.Visible = True
+    Timer1.Enabled = True
+    Label20.Visible = True
+    Label21.Visible = True
+End Sub
+
+Private Sub Command2_Click()
+Form9.Show
+End Sub
+
+Private Sub Command3_Click()
+End
+End Sub
+
+Private Sub Form_Load()
+ ProgressBar1.Visible = False
+ Label20.Visible = False
+ Label21.Visible = False
+End Sub
+
+Private Sub Form_Resize()
+With Me
+.Width = Screen.Width
+.Height = Screen.Height
+.Top = 0
+.Left = 0
+End With
+
+End Sub
+
+Private Sub Timer1_Timer()
+ProgressBar1.Value = ProgressBar1.Value + 5
+Label20.Caption = "Loading..."
+Label21.Caption = ProgressBar1.Value & "%"
+If ProgressBar1.Value = ProgressBar1.Max Then
+Timer1.Enabled = False
+Unload Me
+Form1.Show
+End If
+End Sub
